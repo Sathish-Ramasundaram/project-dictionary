@@ -7,12 +7,25 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <h2>Dictionary</h2>
-        <input type="text" id="searchBox" placeholder="Enter a word">
-        <button type="button" id="searchBtn">Search</button>
-        <hr class="result-line">
-        <div id="resultArea"></div>
+        <h1>Dictionary</h1>
 
-        <script src="script.js"></script>
+    <div class="search-row">
+      <input id="wordInput" type="text" placeholder="Type English word..." />
+      <button id="searchBtn">Search</button>
+    </div>
+
+    <p id="status" class="muted">Loading words...</p>
+
+    <div id="result" class="card hidden">
+      <h2 id="english"></h2>
+      <p id="meaning"></p>
+      <div id="imageWrap"></div>
+
+      <p class="lang"><strong>Tamil:</strong> <span id="tamil"></span></p>
+      <p class="lang"><strong>Kannada:</strong> <span id="kannada"></span></p>
+      <p class="lang"><strong>Hindi:</strong> <span id="hindi"></span></p>
+    </div>
+
+    <script src="script.js"></script>
     </body>
 </html>
