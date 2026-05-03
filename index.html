@@ -16,6 +16,31 @@
 
     <p id="status" class="muted">Loading words...</p>
 
+    <div id="dictionarySection" class="card">
+      <h2>Dictionary Data</h2>
+      <div class="filter-row">
+        <button class="filter-btn active" data-sort-key="English">English</button>
+        <button class="filter-btn" data-sort-key="Tamil">Tamil</button>
+        <button class="filter-btn" data-sort-key="Kannada">Kannada</button>
+        <button class="filter-btn" data-sort-key="Hindi">Hindi</button>
+      </div>
+
+      <div class="table-wrap">
+        <table id="dictionaryTable">
+          <thead>
+            <tr>
+              <th>English</th>
+              <th>Meaning</th>
+              <th>Tamil</th>
+              <th>Kannada</th>
+              <th>Hindi</th>
+            </tr>
+          </thead>
+          <tbody id="dictionaryBody"></tbody>
+        </table>
+      </div>
+    </div>
+
     <div id="result" class="card hidden">
       <h2 id="english"></h2>
       <p id="meaning"></p>

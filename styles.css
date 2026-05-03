@@ -9,3 +9,9 @@ button { padding: 10px 14px; font-size: 16px; cursor: pointer; }
 img { max-width: 220px; border-radius: 8px; margin-top: 10px; }
 .lang { margin: 6px 0; }
 .hidden { display: none; }
+.filter-row { display: flex; flex-wrap: wrap; gap: 8px; margin: 8px 0 12px; }
+.filter-btn.active { background: #222; color: #fff; }
+.table-wrap { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; font-size: 14px; }
+th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+th { background: #f7f7f7; }
